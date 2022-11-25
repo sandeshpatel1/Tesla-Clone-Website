@@ -1,0 +1,68 @@
+.account-header{
+    padding: 15px 20px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+}
+.account-logo img{
+    object-fit: contain;
+    width: 80px;
+    filter: brightness(0) invert(1);
+} 
+.account-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.account-links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    z-index: 0;
+    text-transform: uppercase;
+}
+.account-menu .MuiSvgIcon-root {
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+}
+.account-menu .account-closemenu{
+    color: black;
+}
+.account-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 140px;
+    padding-bottom: 30px;
+}
+.account-person h4{
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: x-large;
+}
+.info-right{
+    display: flex;
+    gap: 20px;
+}
+.info-right a{
+    text-decoration: none;
+    color: #393c41;
+    font-size: large;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+.info-right a:hover{
+    color: black;
+    font-weight: 500;
+}
+.account-car{
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}

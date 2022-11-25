@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    padding-top: 15px;
+}
+.header-logo img{
+    object-fit: contain; 
+    width: 120px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+.header-links{
+    display: flex;
+    gap: 30px;
+    transition: all 0.3s ease-in-out;
+    transition: color .33s ease,background-color .33s ease;
+}
+.header-links a:hover{
+    background-color: hsla(0, 0%, 60.2%, 0.125);
+}
+
+.header-links  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 12px;
+}
+.header-right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+.header-right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 0;
+    position: relative;
+    padding: 10px 12px;
+    transition: color .33s ease,background-color .33s ease;
+}
+.header-right a:hover{
+    background-color: hsla(0, 0%, 60.2%, 0.125);
+}
+.header-menu .MuiSvgIcon-root{
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    
+}
+.header-link-hidden{
+    visibility: hidden;
+}

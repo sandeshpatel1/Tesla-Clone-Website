@@ -1,0 +1,23 @@
+.menu{
+    position: fixed;
+   overflow-y: scroll;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   padding: 70px 20px 20px;
+   background-color: white;
+   gap: 15px;
+   display: flex;
+   flex-direction: column;
+   z-index: 1;
+   min-width: 280px;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .menu {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
