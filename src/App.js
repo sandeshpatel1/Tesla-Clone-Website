@@ -32,7 +32,7 @@ function App() {
         dispatch(logout())
       }
     })
-}, [])
+}, [dispatch])
   
   return (
     <div>
@@ -46,11 +46,12 @@ function App() {
             </>
           } />
         <Route path="/login" element={ <>
-          {!user ? <Login/> : redirect('/account') } 
+          { <Login/> } 
           </> } />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/account" element={ <>
-        {user ? <Account IsMenuOpen={IsMenuOpen} setIsMenuOpen={setIsMenuOpen} /> : redirect('/login')}
+        { <Account IsMenuOpen={IsMenuOpen} setIsMenuOpen={setIsMenuOpen} />}
+          {IsMenuOpen && <Menu /> } 
           </> 
           }/>
       </Routes>
